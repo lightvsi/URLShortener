@@ -18,9 +18,9 @@ public class Controller {
     private URLPairService urlPairService;
 
     @PostMapping(path = "/add", consumes = "application/json")
-    public ResponseEntity<String> getShortURL(@RequestBody URLPairModel model) {
+    public ResponseEntity<URLPairModel> getShortURL(@RequestBody URLPairModel model) {
         try {
-            return new ResponseEntity<>(urlPairService.put(model), HttpStatus.OK);
+            return new ResponseEntity<>(new URLPairModel(urlPairService.put(model)), HttpStatus.OK);
         } catch (BadRequest e) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
