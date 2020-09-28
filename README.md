@@ -42,8 +42,5 @@ Content-Type: application/json
 ```
 Редирект на страницу.
 ```http request
-<<<<<<< HEAD
 GET http://localhost:8080/readable-link
-=======
-GET http://localhost:8080/readable-link
->>>>>>> de14d9fc4022d79d2675445b8f9aa8c4b13a9f98
+```
