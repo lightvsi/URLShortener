@@ -1,6 +1,6 @@
 # URLShortener
 URLShortener - REST API сервис, предназначенный для сокращения URL.
-Принимает на вход json объект с полем "url" и опциональным полем "name".
+Принимает на вход JSON объект с полем "url" и опциональным полем "name".
 
 ## How to build and run
 ```shell script
